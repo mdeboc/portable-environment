@@ -18,7 +18,7 @@ RUN apt update \
 
 RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py -o /poetry.py \
     && python /poetry.py -y --version 0.12.17 && rm /poetry.py
-ENV SHELL /bin/bash -l
+ENV SHELL /bin/bash
 
 ENV POETRY_CACHE /work/.cache/poetry
 ENV PIP_CACHE_DIR /work/.cache/pip
